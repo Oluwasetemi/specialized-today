@@ -1,0 +1,40 @@
+
+
+div.wrapper {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 1rem;
+
+  h1 {
+    text-align: center;
+    color: rgb(255 0 0);
+  }
+}
+
+html {
+  /* declaration */
+  --red-hue: 0deg;
+  --red-sat: 100%;
+  --red-lit: 50%;
+
+  --red: hsl(
+    var(--red-hue)
+    var(--red-sat)
+    var(--red-lit)
+  );
+  --dark-red: hsl(
+    var(--red-hue)
+    var(--red-sat)
+    calc(var(--red-lit) - 20%)
+  );
+  --transparent-red: hsl(
+    var(--red-hue)
+    var(--red-sat)
+    var(--red-lit) / 0.5
+  );
+  --soft-red: hsl(
+    var(--red-hue)
+    calc(var(--red-sat) - 30%)
+    calc(var(--red-lit) + 10%)
+  );
+}

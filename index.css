@@ -1,0 +1,193 @@
+/*
+CSS Reset
+*/
+/* 1. Use a more-intuitive box-sizing model */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+/* END OF CSS RESET */
+
+:root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p {
+  color: red;
+  font-size: 18px;
+  /* display: flex; */
+}
+
+div.my-css-rule1 {
+  background: red;
+  color: beige;
+  font-size: 1.2rem;
+}
+
+span#container-wrapper {
+  color: red;
+  font-size: 36px;
+}
+
+[href] {
+  color: blue;
+}
+
+/* attribute, =, ^, $, ~, |,* */
+[href="https://altschoolafrica.com"]
+{
+  color: rebeccapurple;
+}
+
+[href^="https"] {
+  color: rebeccapurple;
+}
+
+[href$=".io"] {
+  color: rebeccapurple;
+}
+
+[href*="altschool.dev"] {
+  color: rebeccapurple;
+}
+
+[href~="altschool"] {
+  color: fuchsia;
+}
+
+[href|="oluwasetemi-team.dev"] {
+  color: brown;
+}
+
+[href]:visited {
+  text-decoration: none;
+}
+
+/* pseudo classes */
+/* pseudo element */
+
+p::before {
+  content: "✅";
+  display: flex;
+}
+
+p::after {
+  content: "🚀";
+  display: flex;
+}
+
+p::first-line,
+p::first-letter {
+  font-size: 46px;
+  font-weight: 900;
+}
+
+p::selection {
+  background: tomato;
+  color: white;
+}
+
+p span {
+  text-decoration: underline;
+}
+
+h1 + p {
+  margin-top: 0;
+  border: 1px solid green;
+  color: blueviolet !important;
+}
+
+h1 ~ p {
+  color: blue;
+}
+
+.content {
+  padding: 20px;
+
+  .title {
+    color: darkkhaki;
+  }
+
+  &:hover {
+    background-color: lightblue;
+  }
+}
+
+div.content {
+  box-sizing: border-box;
+  max-width: 500px;
+  padding: 20px;
+  border: 10px solid black;
+  margin: 25px auto;
+}
+
+ul > li,
+ol > li {
+  list-style: none;
+}
