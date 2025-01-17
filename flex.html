@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning FLexBox</title>
+</head>
+<body>
+  <style>
+    .container {
+      display: flex;
+      height: 100vh;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .box {
+      flex: 1 2 400px;
+      height: 100px;
+      background-color: red;
+    }
+
+    .box:nth-child(1) {
+      background-color: blue;
+      /*width: 500px;*/
+    }
+
+    .box:nth-child(2) {
+      background-color: green;
+    }
+
+    .box:nth-child(3) {
+      /*width: 500px;*/
+      background-color: yellow;
+      align-self: flex-end;
+    }
+
+    .box:nth-child(4) {
+      background-color: purple;
+      order: 2;
+    }
+
+    .box:nth-child(5) {
+      /*width: 500px;*/
+      background-color: orange;
+      order: 1;
+    }
+
+  </style>
+  <div class="container">
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+  </div>
+</body>
+</html>
