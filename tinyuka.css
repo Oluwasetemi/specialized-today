@@ -37,4 +37,33 @@ html {
     calc(var(--red-sat) - 30%)
     calc(var(--red-lit) + 10%)
   );
+
+}
+
+/* font declaration */
+@font-face {
+  font-family: "MonaspaceKrypton-400";
+  src: url("/assets/fonts/variable/MonaspaceKrypton-Bold.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "MonaspaceKrypton";
+  src: url("/assets/fonts/variable/MonaspaceKrypton-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 200;
+}
+
+body {
+  /* font-family: "MonaspaceKrypton-400", 'Courier New', Courier, monospace, sans-serif; */
+}
+
+h1 {
+  font-family: "MonaspaceKrypton-400";
+}
+
+p {
+  font-family: "MonaspaceKrypton";
+  border: 2px solid
 }

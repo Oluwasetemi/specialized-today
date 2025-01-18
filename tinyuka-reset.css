@@ -11,6 +11,19 @@ div.wrapper {
   }
 }
 
+/* --red-hue: 0deg; */
+@property --red-hue {
+  syntax: "<color>";
+  inherits: false;
+  initial-value: 0deg;
+}
+
+@property --red-sat {
+  syntax: "<color>";
+  inherits: true;
+  initial-value: 100deg;
+}
+
 html {
   /* declaration */
   --red-hue: 0deg;
@@ -37,4 +50,9 @@ html {
     calc(var(--red-sat) - 30%)
     calc(var(--red-lit) + 10%)
   );
+
+  font-family: "Alegreya", serif;
+   font-optical-sizing: auto;
+   /* font-weight: <weight>; */
+   font-style: normal;
 }
